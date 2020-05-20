@@ -79,7 +79,7 @@ body {
 	text-align: center;
 }
 
-.upload-image{
+.upload-image {
 	width: 15%;
 	margin-top: 5%;
 	padding-top: 5%;
@@ -109,7 +109,7 @@ body {
 	width: 200px;
 	margin: 0;
 	color: #fff;
-	background: #4248F4;
+	background: #4248f4;
 	border: none;
 	margin-top: 20px;
 	padding: 10px;
@@ -171,7 +171,7 @@ body {
 	color: #35465d;
 }
 
-.text-center{
+.text-center {
 	margin-top: 1%;
 }
 
@@ -209,41 +209,78 @@ body {
 	margin-bottom: 12%;
 }
 
-.addthis_inline_share_toolbox_7z2u{
+.addthis_inline_share_toolbox_7z2u {
 	margin-top: 2%;
 }
 
-.copyright-label{
+.copyright-label {
 	font-size: 0.5rem;
 	text-align: center;
 	color: #808080;
 	padding-bottom: 10px;
 }
 
-.thin-banner{
+.thin-banner {
 	width: 320px;
 	margin: 0 auto;
 }
-.ad-banner{
+.ad-banner {
 	width: 320px;
 	margin: 0 auto;
 }
-.ad-banner-2{
+.ad-banner-2 {
 	width: 320px;
 	margin: 0 auto;
 	margin-bottom: 5%;
 }
-.food-ad-1{
+.food-ad-1 {
 	width: 320px;
 	margin: 0 auto;
 }
-.food-ad-2{
+.food-ad-2 {
 	width: 320px;
 	margin: 0 auto;
 }
-.food-ad-3{
+.food-ad-3 {
 	width: 320px;
 	margin: 0 auto;
+}
+
+.warning-text {
+	font-family: NanumSquareR;
+	font-size: 0.8rem;
+	text-align: center;
+	color: #35465d;
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+
+.copy-container{
+	align-items:center;
+	margin: 3% auto;
+}
+
+.youtube-link {
+	font-family: NanumSquareR;
+	font-size: 1rem;
+	line-height: 1.71;
+	text-align: center;
+	color: #35465d;
+	text-decoration: underline;
+}
+
+.youtube-link:hover {
+	font-family: NanumSquareR;
+	font-size: 1rem;
+	line-height: 1.71;
+	text-align: center;
+	color: #f73737;
+	text-decoration: underline;
+}
+
+.youtube-icon {
+	width: 30px;
+	height: 27.262px;
 }
 
 @media screen and (max-width: 600px) {

@@ -1,7 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166644651-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-166644651-1');
+	</script>
+
+	<meta property="og:title" content="AI기반 탈모테스트" />
+	<meta property="og:url" content="talmotest.site" />
+	<meta property="og:image" content="img/preview_img.png" />
+	<meta property="og:description" content="인공지능을 이용해 탈모 검사를 해보세요!" />
+
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -37,12 +54,10 @@
 			</ul>
 		</div>
 	</nav>
-	
-	<div class="thin-banner"><ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-rh7sqh0w96jp" 
- data-ad-width   = "320" 
- data-ad-height  = "50"></ins> </div>
 
+	<div class="thin-banner">
+		<ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-rh7sqh0w96jp" data-ad-width="320" data-ad-height="50"></ins>
+	</div>
 
 	<section class="section">
 		<h1 class="title">AI 기반 탈모 테스트</h1>
@@ -58,6 +73,13 @@
 				<img src="img/upload.svg" class="upload-image" alt="">
 				<h3>정수리가 똑바로 보이는 사진을 올려주세요.</h3>
 			</div>
+		</div>
+		<div class="warning-text" id="warning-text">*염색, 탈색모에서는 결과가 정확하지 않을 수 있습니다.
+			<br>*결과에는 의학적 효력이 없습니다. 재미로 즐겨주세요!
+		<div class="copy-container">
+			<img src="img/youtube-copy.jpg" alt="youtube-icon" class="youtube-icon">
+			<a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" class="youtube-link">제작 도움: 조코딩 유튜브 채널</a>
+		</div>
 		</div>
 
 		<div class="file-upload-content">
@@ -84,15 +106,12 @@
 	<div class="ad-banner">
 		<ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-qhnaxr3chyr8" data-ad-width="320" data-ad-height="100"></ins>
 	</div>
-	
+
 	<div class="ad-banner-2">
-		<ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-1iyqk6zhwg6k2" 
- data-ad-width   = "320" 
- data-ad-height  = "100"></ins> 
+		<ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-1iyqk6zhwg6k2" data-ad-width="320" data-ad-height="100"></ins>
 	</div>
 	
-	
+
 	<!-- <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script> -->
 	<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
@@ -190,6 +209,7 @@
 				var reader = new FileReader();
 				reader.onload = function(e) {
 					$('.image-upload-wrap').hide();
+					$('.warning-text').hide();
 					$('#loading').show();
 					$('.file-upload-image').attr('src', e.target.result);
 					$('.file-upload-content').show();
@@ -209,6 +229,7 @@
 			$('.file-upload-input').replaceWith($('.file-upload-input').clone());
 			$('.file-upload-content').hide();
 			$('.image-upload-wrap').show();
+			$('.warning-text').show();
 		}
 		$('.image-upload-wrap').bind('dragover', function() {
 			$('.image-upload-wrap').addClass('image-dropping');
